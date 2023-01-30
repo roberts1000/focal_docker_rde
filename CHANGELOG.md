@@ -1,0 +1,5 @@
+# CHANGELOG
+
+Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Changes marked **(Internal)** only impact development. 
+
+1. [#1](../../issues/1): Create initial implementation.
