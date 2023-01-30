@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Build the RDE image.
+
+prefix=$(command -v winpty)
+$prefix docker build -t focal_rde_image .
