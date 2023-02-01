@@ -3,7 +3,6 @@
 # The first version in the list is set as the default Ruby in RVM.
 RUBIES_TO_INSTALL = ['3.1.3', '3.2.0']
 RUBYGEMS_TO_INSTALL = '3.4.5'
-BUNDLER_TO_INSTALL = '2.4.5'
 
 RUBIES_TO_INSTALL.each do |version_string|
   puts "Installing Ruby #{version_string}"
@@ -15,8 +14,6 @@ RUBIES_TO_INSTALL.each do |version_string|
   system "/bin/bash -l -c 'rvm use #{version_string} --default'"
   puts "Installing RubyGems #{RUBYGEMS_TO_INSTALL}"
   system "/bin/bash -l -c 'gem update --system #{RUBYGEMS_TO_INSTALL}'"
-  puts "Installing bundler #{BUNDLER_TO_INSTALL}"
-  system "/bin/bash -l -c 'gem install bundler -v=#{BUNDLER_TO_INSTALL}'"
   puts "Installing Starting Gems"
   system "/bin/bash -l -c 'gem install rspec_n mailcatcher'"
 end
