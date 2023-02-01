@@ -577,10 +577,10 @@ RUN echo "$IMAGE_VERSION" | tee -a ~/IMAGE_VERSION && \
 
 # *****************************************************************************************************************************
 # Configure RubyGems credentials if the user provided a rubygems_credentials file.
-RUN if [ -f "$USER_FILES_DIR/rubygems_credentials" ]; \
-  then mkdir $HOME_DIR/.gem/ \
-  mv "$USER_FILES_DIR/rubygems_credentials" /home/dev/.gem/credentials; \
-  chmod 600 /home/dev/.gem/credentials; \
+RUN if [ -f "$USER_FILES_DIR/rubygems_credentials" ]; then \
+  mkdir $HOME_DIR/.gem; \
+  mv $USER_FILES_DIR/rubygems_credentials $HOME_DIR/.gem/credentials; \
+  chmod 600 $HOME_DIR/.gem/credentials; \
   fi
 # *****************************************************************************************************************************
 
