@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Build the RDE image.
+
+prefix=$(command -v winpty)
+$prefix docker pull ubuntu:20.04
+
+prefix=$(command -v winpty)
+$prefix docker build --no-cache -t focal_rde_image .
