@@ -7,6 +7,7 @@ Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Ch
 1. [#5](../../issues/5): Add Ruby 3.3.0.
 1. [#7](../../issues/7): Use RubyGems 3.5.4.
 1. [#9](../../issues/9): Temporarily disable automatically starting mailcatcher.
+1. [#11](../../issues/11): Use nvm 0.39.7.
 
 ## 1.0.0 (Oct 14th, 2023)
 
