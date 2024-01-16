@@ -338,7 +338,7 @@ RUN sudo apt-get install -y ca-certificates gnupg && \
     sudo mkdir -p /etc/apt/keyrings && \
     curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 # Create deb repo
-RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODEJS_MAJOR_VERSION.x nodistro main" | \ 
+RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODEJS_MAJOR_VERSION.x nodistro main" | \
     sudo tee /etc/apt/sources.list.d/nodesource.list
 # Update and install
 RUN sudo apt-get update -qq && sudo apt-get install -y nodejs
@@ -611,7 +611,8 @@ WORKDIR $PROJECTS_DIR
 # *****************************************************************************************************************************
 CMD sudo redis-server $REDIS_CONFIG_FILE && \
   # Replace the default mailcatcher output with something nicer. (It throws a deprecation notice and other unnecessary info.)
-  printf " * Starting mailcatcher: " && /bin/bash -l -c ' mailcatcher --http-ip 0.0.0.0 >/dev/null 2>&1' && echo "[ OK ]" && \
+  # Temporarily disable. For more info, see https://github.com/roberts1000/focal_docker_rde/issues/9.
+  # printf " * Starting mailcatcher: " && /bin/bash -l -c ' mailcatcher --http-ip 0.0.0.0 >/dev/null 2>&1' && echo "[ OK ]" && \
   sudo service ssh start && \
   # Start PostgreSQL service
   # sudo service postgresql start && \
