@@ -347,7 +347,7 @@ RUN sudo apt-get update -qq && sudo apt-get install -y nodejs
 # *****************************************************************************************************************************
 # Install nvm.
 ENV NVM_VERSION=0.39.7
-ENV DEFAULT_NODEJS_VERSION=$NODEJS_MAJOR_VERSION.8.1
+ENV DEFAULT_NODEJS_VERSION=$NODEJS_MAJOR_VERSION.11.0
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh | bash
 # The 'source /home/$DEV_USER/.nvm/nvm.sh' statements below are a hack. The above 'curl' command installs nvm and adds some
 # lines to ~/.bashrc. When a login shell is started (using '/bin/bash -l') ~/.bashrc should get sourced and the `nvm`
