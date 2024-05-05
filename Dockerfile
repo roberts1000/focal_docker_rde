@@ -332,7 +332,8 @@ RUN echo "\n# Define system aliases" | tee -a ~/.bashrc && \
 # Install a system NodeJS. The nvm (node version manager) tool is installed in a later step. nvm will take over and activate
 # a version of NodeJS that is not installed in the system. The system version can be used by executing 'nvm use system'.
 # The following is recommended by from https://github.com/nodesource/distributions#installation-instructions.
-ENV NODEJS_MAJOR_VERSION=20
+# Find latest versions at https://nodejs.org/download/release/latest-v22.x/.
+ENV NODEJS_MAJOR_VERSION=22
 # Download and import Nodesource GPG key
 RUN sudo apt-get install -y ca-certificates gnupg && \
     sudo mkdir -p /etc/apt/keyrings && \
@@ -347,7 +348,7 @@ RUN sudo apt-get update -qq && sudo apt-get install -y nodejs
 # *****************************************************************************************************************************
 # Install nvm.
 ENV NVM_VERSION=0.39.7
-ENV DEFAULT_NODEJS_VERSION=$NODEJS_MAJOR_VERSION.11.0
+ENV DEFAULT_NODEJS_VERSION=$NODEJS_MAJOR_VERSION.1.0
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v$NVM_VERSION/install.sh | bash
 # The 'source /home/$DEV_USER/.nvm/nvm.sh' statements below are a hack. The above 'curl' command installs nvm and adds some
 # lines to ~/.bashrc. When a login shell is started (using '/bin/bash -l') ~/.bashrc should get sourced and the `nvm`
