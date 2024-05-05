@@ -251,7 +251,7 @@ RUN $BUILD_SCRIPTS_DIR/configure_git
 # *****************************************************************************************************************************
 # Install and configure Git LFS. See https://github.com/git-lfs/git-lfs/releases to find newer version of Git LFS.
 WORKDIR $BUILD_TMP_DIR
-ENV GIT_LFS_VERSION=3.4.0
+ENV GIT_LFS_VERSION=3.5.1
 ENV GIT_LFS_FILE=git-lfs-linux-amd64-v$GIT_LFS_VERSION.tar.gz
 ENV GIT_LFS_URL=https://github.com/git-lfs/git-lfs/releases/download/v$GIT_LFS_VERSION/$GIT_LFS_FILE
 RUN wget $GIT_LFS_URL && \
