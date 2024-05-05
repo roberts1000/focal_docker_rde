@@ -8,6 +8,7 @@ Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Ch
 1. [#21](../../issues/21): Remove Ruby 3.3.0.
 1. [#23](../../issues/23): Remove Ruby 3.2.2.
 1. [#25](../../issues/25): Use RubyGems 3.5.10; use Bundler 2.5.10.
+1. [#27](../../issues/27): Use GitLFS 3.5.1.
 
 ## 1.1.0 (Jan 15, 2024)
 
