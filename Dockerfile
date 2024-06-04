@@ -421,7 +421,7 @@ RUN sudo chown $DEV_USER:$DEV_USER $BUILD_TMP_DIR/chromedriver/ && \
 #   sudo redis-server $REDIS_CONFIG_FILE
 # This is done at the very bottom of the Dockerfile.
 # *****************************************************************************************************************************
-ENV REDIS_VERSION=7.2.4
+ENV REDIS_VERSION=7.2.5
 ENV REDIS_CONFIG_FILE=/etc/redis/redis.conf
 ENV REDIS_LOG_FILE=/var/log/redis.log
 ENV REDIS_DATA_DIR=/var/lib/redis
