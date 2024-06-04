@@ -323,6 +323,8 @@ RUN echo "\n# Define system aliases" | tee -a ~/.bashrc && \
   echo "alias railss='rails s -b 0.0.0.0 -p 3000'" | tee -a ~/.bashrc && \
   # cdp - Change directory to the $PROJECTS_DIR directory.
   echo "alias cdp='cd $PROJECTS_DIR'" | tee -a ~/.bashrc && \
+  # gg - Execute git gone.
+  echo "alias gg='git checkout master && git pull && git gone -pd'" && \
   # cdb - Change directory to the $BUILD_DIR directory.
   echo "alias cdb='cd $BUILD_DIR'" | tee -a ~/.bashrc && \
   echo "\n" | tee -a ~/.bashrc

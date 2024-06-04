@@ -7,6 +7,7 @@ Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Ch
 1. [#33](../../issues/33): Add Ruby 3.3.2 as the default Ruby.
 1. [#35](../../issues/35): Remove Ruby 3.3.1.
 1. [#37](../../issues/37): Use RubyGems 3.5.11.
+1. [#39](../../issues/39): Add `gg` alias to run `git gone`.
 
 ## 1.2.0 (Mar 04, 2024)
 
