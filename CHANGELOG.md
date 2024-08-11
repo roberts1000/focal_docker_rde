@@ -6,6 +6,7 @@ Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Ch
 
 1. [#45](../../issues/45): Add Ruby 3.3.4 as the default Ruby.
 1. [#47](../../issues/47): Remove Ruby 3.3.2.
+1. [#49](../../issues/49): Use RubyGems 3.5.17 and Bundler 2.5.17.
 
 ## 1.3.0 (Jun 04, 2024)
 
