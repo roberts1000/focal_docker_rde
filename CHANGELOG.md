@@ -8,6 +8,7 @@ Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Ch
 1. [#47](../../issues/47): Remove Ruby 3.3.2.
 1. [#49](../../issues/49): Use RubyGems 3.5.17 and Bundler 2.5.17.
 1. [#51](../../issues/51): Use nvm 0.40.0.
+1. [#53](../../issues/53): Set `EDITOR` Env Var to `nano`.
 
 ## 1.3.0 (Jun 04, 2024)
 

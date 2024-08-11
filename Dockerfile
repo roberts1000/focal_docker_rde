@@ -575,6 +575,11 @@ RUN echo 'debconf debconf/frontend select Dialog' | sudo debconf-set-selections
 # *****************************************************************************************************************************
 
 # *****************************************************************************************************************************
+# Set other Environment Variables.
+RUN echo "$EDITOR" | tee -a ~/.bashrc
+# *****************************************************************************************************************************
+
+# *****************************************************************************************************************************
 # Create IMAGE_VERSION files and ensure environment variable is created based on the file contents.
 RUN echo "$IMAGE_VERSION" | tee -a ~/IMAGE_VERSION && \
   echo 'export IMAGE_VERSION=`cat ~/IMAGE_VERSION`' | tee -a ~/.bashrc && \
