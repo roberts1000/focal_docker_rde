@@ -5,6 +5,7 @@ Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Ch
 ## Next Release
 
 1. [#57](../../issues/57): Add Ruby 3.3.5 as the default Ruby.
+1. [#59](../../issues/59): Remove Ruby 3.3.4.
 
 ## 1.4.0 (Oct 06, 2024)
 
