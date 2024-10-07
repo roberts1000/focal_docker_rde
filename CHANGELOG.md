@@ -8,6 +8,7 @@ Issues are tracked at https://github.com/roberts1000/focal_docker_rde/issues. Ch
 1. [#59](../../issues/59): Remove Ruby 3.3.4.
 1. [#61](../../issues/61): Use RubyGems 3.5.21 and Bundler 2.5.21.
 1. [#63](../../issues/63): Use nvm 0.40.1.
+1. [#65](../../issues/65): Use redis 7.2.6.
 
 ## 1.4.0 (Oct 06, 2024)
 
